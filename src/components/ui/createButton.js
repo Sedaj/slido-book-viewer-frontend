@@ -6,7 +6,7 @@ const CreateButtonComponent = props =>
     onClick={() => props.history.push("/create")}
   >
     <div className="create-button">
-      <img src="https://lh4.googleusercontent.com/janERu6189Pxno3kuDi558YcklyxjBS931jHBFNs3fkbLuEB5BeeCNazjSQxLqLHg8NrnaakjpZaTBg=w1920-h952" />
+      <img src="https://i.imgur.com/O5cvjp0.png" />
     </div>
   </div>;
 
