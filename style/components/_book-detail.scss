@@ -1,0 +1,35 @@
+.book-detail-wrapper {
+  background-color: $tertiary-color;
+  .book-detail {
+    padding: 20px;
+    &__author {
+      padding-bottom: 20px;
+    }
+    &__description {
+      padding: 20px 0;
+      font-style: italic;
+    }
+    &__actions {
+      &--single, &--single a {
+        display: inline;
+        color: $secondary-color;
+        font-weight: 600;
+        cursor: pointer;
+        &:nth-child(2n) {
+          border-left: 1px solid black;
+          margin-left: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 500px){
+  .book-detail-wrapper {
+    padding: 50px;
+    .book-detail {
+      border: 1px solid #1f3135;
+    }
+  }
+}

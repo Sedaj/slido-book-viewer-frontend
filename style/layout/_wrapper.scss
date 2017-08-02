@@ -1,0 +1,27 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: $tertiary-color;
+}
+
+#main-wrapper {
+  height: calc(100% - 120px);
+}
+
+.page-wrapper {
+  height: 100%;
+  .row {
+    height: 100%;
+    .column-6 {
+      height: 100%;
+      .book-list-wrapper,
+      .book-detail-wrapper {
+        height: 100%;
+      }
+    }
+  }
+}

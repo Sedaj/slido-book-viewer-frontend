@@ -1,0 +1,12 @@
+.header {
+  background-color: $secondary-color;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  position: relative;
+  z-index: 10;
+  height: $header-height;
+}
+
+#main-logo {
+  padding: 20px;
+  height: 80px;
+}

@@ -1,0 +1,18 @@
+.message {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  &.hidden {
+    display: none;
+  }
+  &--success {
+    background-color: #50cf00;
+    border: 1px solid #038f0a;
+  }
+  &--warning {
+    background-color: #ffc240;
+    border: 1px solid #8f7804;
+  }
+}

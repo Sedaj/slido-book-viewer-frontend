@@ -1,0 +1,32 @@
+.book-list-wrapper {
+  background-color: $primary-color;
+  .book-list {
+    height: 100%;
+    overflow-y: scroll;
+    &__single-item {
+      color: $base-font-color;
+      li {
+        background-color: $primary-color;
+        transition: background 0.15s linear;
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+    }
+    &__list {
+      list-style-type: none;
+      li {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 500px){
+  .book-list-wrapper {
+    padding: 50px;
+    .book-list {
+      border: 1px solid #1f3135;
+    }
+  }
+}

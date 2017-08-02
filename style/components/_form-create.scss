@@ -1,0 +1,45 @@
+.form-create {
+  &__form-field{
+    margin-top: 20px;
+  }
+  &__input {
+    border: 1px solid $primary-color;
+    margin-top: 10px;
+    font-size: 1.3em;
+    padding: 20px;
+    // background-color: lighten($tertiary-color, 5%);
+    background-color: #ffffff;
+    width: 100%;
+    &--textarea {
+      resize: vertical;
+    }
+    &--submit {
+      cursor: pointer;
+      border: 0;
+      background-color: $secondary-color;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 20px 0;
+      border-radius: 2px;
+      color: #ffffff;
+      font-size: 2em;
+      &.disabled {
+        background-color: lighten($secondary-color, 30%);
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+      &:focus {
+      }
+      &:active {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .38), 0 4px 8px rgba(0, 0, 0, .28);
+        transform: scale(0.99) rotate(360deg);
+        outline: none;
+      }
+      &::-moz-focus-inner {
+        border: 0;
+      }
+    }
+  }
+}
